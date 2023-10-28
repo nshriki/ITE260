@@ -1,0 +1,292 @@
+print("Group 1 :)")
+print("TRUE OR FALSE")
+print("Answer should in capital letters (TRUE/FALSE)\n")
+
+checks = 0
+
+for _ in range(15):
+    print(
+        "1. If the else statement is used with a do while loop, the else statement is executed when the condition becomes true.")
+    user = input("")
+    if user == "FALSE":
+        print("Correct!")
+        checks += 1
+    elif user == "TRUE":
+        print("Wrong! The correct answer is FALSE. There is no do while loop in Python.")
+    else:
+        print("Invalid Input! Answer in all caps.")
+
+    # ===============
+
+    print("2. An infinite loop means the looping condition is sometimes true, so that loop can be terminated.")
+    user = input("")
+    if user == "FALSE":
+        print("Correct!")
+        checks += 1
+    elif user == "TRUE":
+        print("Wrong! The correct answer is FALSE. Looping condition is always true.")
+    else:
+        print("Invalid Input! Answer in all caps.")
+
+    #     ==================
+
+    print("3. A for loop in Python can iterate over the items of any sequence, such as a list or a string.")
+    user = input("")
+    if user == "TRUE":
+        print("Correct!")
+        checks += 1
+    elif user == "FALSE":
+        print("Wrong! The correct answer is TRUE.")
+    else:
+        print("Invalid Input! Answer in all caps.")
+
+    # =========
+
+    print("4. The range() function in Python generates a set of whole numbers starting from 1 to the specified number.")
+    user = input("")
+    if user == "FALSE":
+        print("Correct!")
+        checks += 1
+    elif user == "TRUE":
+        print("Wrong! The correct answer is FALSE. Starting from 0 to the specified number.")
+    else:
+        print("Invalid Input! Answer in all caps.")
+
+    # ===================
+
+    print("5. You can nest any type of loop inside another type of loop in Python.")
+    user = input("")
+    if user == "TRUE":
+        print("Correct!")
+        checks += 1
+    elif user == "FALSE":
+        print("Wrong! The correct answer is TRUE.")
+    else:
+        print("Invalid Input! Answer in all caps.")
+
+    # ********************************
+
+    print("MULTIPLE CHOICE")
+    print("Answer the letter of the correct answer. Answer in small letter.")
+
+    print("""6. The statement is considered a no-operation statement. \na. continue b. break c. pass d. control""")
+    user = input("")
+    if user == "c":
+        print("Correct!")
+        checks += 1
+    elif user == "a" or "b" or "d":
+        print("Wrong! The correct answer is c.")
+    else:
+        print("Invalid Input!")
+
+    print("""\n\n7. Find the error of the code below and find the correct syntax.
+    \nnum = [1, 5, 3, 2, 7, 8, 10, 4, 6, 9]
+    \nfor number in num:
+    \nif number % 2 == 0:
+ 	\n  break
+ 	\nelse:
+ 	\n	print('Number is: ', number)
+
+ 	\n\na. break, continue
+    \nb. numbers, break
+    \nc. break, pass
+    \nd. break, ;""")
+
+    user = input("")
+    if user == "c":
+        print("Correct!")
+        checks += 1
+    elif user == "a" or "b" or "d":
+        print("Wrong! The correct answer is c.")
+    else:
+        print("Invalid Input!")
+
+    # ============
+
+    print("""\n\n8. What is the output of the following Python code?
+    \ni = 1
+    \nwhile i <= 5:
+    \nif i == 4:
+ 	\n	break
+ 	\nprint(i)
+ 	\ni += 1
+
+    \n\na. 12345
+    \nb. 123
+    \nc. 1234
+    \nd. 1235""")
+
+    user = input("")
+    if user == "b":
+        print("Correct!")
+        checks += 1
+    elif user == "a" or "c" or "d":
+        print("Wrong! The correct answer is b.")
+    else:
+        print("Invalid Input!")
+
+    print("""\n\n9. There is a function called _______ that either take a single number and behaves like a list of numbers going from zero.
+    \na. for
+    \nb. index
+    \nc. loop
+    \nd. range""")
+
+    user = input("")
+    if user == "d":
+        print("Correct!")
+        checks += 1
+    elif user == "a" or "b" or "c":
+        print("Wrong! The correct answer is d.")
+    else:
+        print("Invalid Input!")
+
+    print("""\n\n10. In a Python loop, when does the "continue" statement come into play?
+    \na. It ends the loop completely.
+    \nb. It skips the first iteration.
+    \nc. It skips the current iteration and moves to the next.
+    \nd. It restarts the loop from the beginning.""")
+
+    user = input("")
+    if user == "c":
+        print("Correct!")
+        checks += 1
+    elif user == "a" or "b" or "d":
+        print("Wrong! The correct answer is c.")
+    else:
+        print("Invalid Input!")
+
+    # ======================
+
+    print("""\n\n11. What is the output of the code below?
+    \ncarBrands = ['Porsche', 'BMW', 'Ferrari']
+    \nfor index in range(len(carBrands)):
+    \nprint ('Car Brands:', carBrands[index])
+    \nprint ("\nLet's go! Slay :)")
+
+    \n\na.
+    \nCar Brands: Porsche
+    \nCar Brands: BMW
+    \nCar Brands:  Ferrari
+
+    \n\nLet's go! Slay:)
+
+    \n\nb.
+    \nCar Brands: Porsche
+    \nCar Brands: BMW
+    \nCar Brands: Ferrari
+    \n\nLet's go! Slay :)
+
+    \n\nc.
+    \nCar Brαnds: Porsche
+    \nCar Brands: BMW
+    \nCar Brands: Ferrari
+
+    \n\nLet's go! Slay :)
+
+    \n\nd.
+    \nCar Brands: Porsche
+    \nCar Brands: BMW
+    \nCar Brands: Ferrari
+
+    \n\nLℯt's go! Slay :)""")
+
+    user = input("")
+    if user == "b":
+        print("Correct!")
+        checks += 1
+    elif user == "a" or "c" or "d":
+        print("Wrong! The correct answer is b.")
+    else:
+        print("Invalid Input!")
+
+    print("""\n\n12. What is the primary purpose of a for loop in Python?
+    \na. To print a specific number of stars.
+    \nb. To execute a set of conditions repeatedly until a condition is satisfied.
+    \nc. To copy and paste code multiple times.
+    \nd. To create a list of numbers.""")
+
+    user = input("")
+    if user == "b":
+        print("Correct!")
+        checks += 1
+    elif user == "a" or "c" or "d":
+        print("Wrong! The correct answer is b.")
+    else:
+        print("Invalid Input!")
+
+    print("""\n\n13. Find the error of the code below.
+    \n\nrow = 5
+    \nfor i in range(1, row + 1, 1):
+ 	\nfor j in range(1, i + 1):
+ 	\n	print("*", end=' ')
+ 	\nprint("")
+
+    \na. end=' '
+    \nb. i += 1
+    \nc. identifier j
+    \nd. no error""")
+
+    user = input("")
+    if user == "d":
+        print("Correct!")
+        checks += 1
+    elif user == "a" or "b" or "c":
+        print("Wrong! The correct answer is d.")
+    else:
+        print("Invalid Input!")
+
+    print("""\n\n14. Find the correct syntax to this code.
+    \n\ni = 2
+    \nwhile(i < 10):
+ 	\nj = 2
+ 	\nwhile(j <= (i/j)):
+ 	\n	if not(i*j): break
+ 	\n	j = j + 1
+ 	\nif (j > i/j) : print (i, " is prime")
+ 	\ni = i + 1
+   \nprint ("Good bye!")
+
+    \n\nThis should be the output of the code:
+    \n2  is prime
+    \n3  is prime
+    \n5  is prime
+    \n7  is prime
+    \nThis is the sign, mag manifest ka na ug 1.00 na grade :>
+
+    \n\na. >
+    \nb. //
+    \nc. -=
+    \nd. %
+    \ne. None of the above.""")
+
+    user = input("")
+    if user == "d":
+        print("Correct!")
+        checks += 1
+    elif user == "a" or "b" or "c":
+        print("Wrong! The correct answer is d.")
+    else:
+        print("Invalid Input!")
+
+    print("""\n\n15. How many times does "Welcome to Python" get printed?
+    \ncount = 0
+    \nwhile (count < 11):
+    \n    print("Welcome to Python")
+    \n  count += 2
+
+    \n\na. 6
+    \nb. 7
+    \nc. 1
+    \nd. 11""")
+
+    user = input("")
+    if user == "a":
+        print("Correct!")
+        checks += 1
+    elif user == "b" or "c" or "d":
+        print("Wrong! The correct answer is a.")
+    else:
+        print("Invalid Input!")
+    break
+
+print("Score: " + str(checks) + "/15")

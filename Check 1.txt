@@ -1,0 +1,21 @@
+What is the output of the code shown below?
+a = 27
+b = 11
+c = 12
+d = 5
+e = 3
+e = (a + b) * c / d
+print("Value of (a + b) * c / d is ", e)
+e = ((a + b) * c) / d
+print("Value of ((a + b) * c) / d is ", e)
+e = (a + b) * (c / d);
+print("Value of (a + b) * (c / d) is ", e)
+e = a + (b * c) / d;
+print("Value of a + (b * c) / d is ", e)
+
+
+Output:
+Value of (a + b) * c / d is  91.2
+Value of ((a + b) * c) / d is  91.2
+Value of (a + b) * (c / d) is  91.2
+Value of a + (b * c) / d is  53.4

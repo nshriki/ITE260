@@ -1,0 +1,82 @@
+1. Create a program for the  user where they can input their name and age and print name and age together 
+
+> Code:
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+
+print(name + " " + str(age))
+
+> Output:
+
+Enter your name: Bren
+Enter your age: 19
+Bren 19
+
+
+
+2. Create a program where a user can input there fname, lname, gender, phoneNumber, and location. Use casting to print it in one line.
+
+> Code:
+
+fname = input("Enter your first name: ")
+lname = input("Enter your last name: ")
+gender = input("Enter your gender: ")
+phoneNum = int(input("Enter your phone number: "))
+location = input("Enter your location: ")
+
+print(fname + " " + lname + " " + gender + " " + str(phoneNum) + " " + location)
+
+> Output:
+
+Enter your first name: Bren
+Enter your last name: Sohon
+Enter your gender: Female
+Enter your phone number: 09361941074
+Enter your location: Cebu City
+Bren Sohon Female 9361941074 Cebu City
+
+
+
+3. Create a program where user input add two numbers and add them then create a result variable. For the output should look like this
+1 + 1 = 2
+
+> Code:
+
+a = int(input("Enter a number: "))
+b = int(input("Enter another number: "))
+
+sum = a + b
+print(str(a) + " + " + str(b) + " =", str(sum))
+
+> Output:
+
+Enter a number: 50
+Enter another number: 31
+50 + 31 = 81
+
+
+
+4. Create a program to input and calculate grade average assuming your a teacher and you need input a student name and grade with 4 subject to be calculated use casting to print the result for calculated grade with the student name
+
+> Code:
+
+name = input("Enter your full name: ")
+sub1 = int(input("Enter subject 1 grade: "))
+sub2 = int(input("Enter subject 2 grade: "))
+sub3 = int(input("Enter subject 3 grade: "))
+sub4 = int(input("Enter subject 4 grade: "))
+
+avg = (sub1 + sub2 + sub3 + sub4) / 4
+
+print("Full Name: " + name + "\n" + "Average: " + str(avg))
+
+> Output:
+
+Enter your full name: Bren Sohon
+Enter subject 1 grade: 99
+Enter subject 2 grade: 98
+Enter subject 3 grade: 97
+Enter subject 4 grade: 96
+Full Name: Bren Sohon
+Average: 97.5

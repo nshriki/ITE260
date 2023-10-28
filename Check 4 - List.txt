@@ -1,0 +1,57 @@
+1. Create an array of car brands with 5 values and use append to add 3 another value
+
+> CODE:
+
+carBrands = ['Toyota','BMW', 'Porsche', 'Ford', 'Audi']
+carBrands.append('Chevrolet')
+carBrands.append('Tesla')
+carBrands.append('Bentley')
+
+print(carBrands)
+
+> OUTPUT:
+
+['Toyota', 'BMW', 'Porsche', 'Ford', 'Audi', 'Chevrolet', 'Tesla', 'Bentley']
+
+
+
+2. Create an array of motor brands with 5 values and use insert into index 3 to add another value then use a del function to delete the last index of the array
+
+> CODE:
+
+motorBrands = ['Honda', 'Kawasaki', 'KTM', 'Suzuki', 'Ducati']
+motorBrands.insert(3, 'Harley-Davidson')
+del motorBrands[5]
+print(motorBrands)
+
+> OUTPUT:
+
+['Honda', 'Kawasaki', 'KTM', 'Harley-Davidson', 'Suzuki']
+
+
+
+3. Create an array of fruit types with 5 values and change the existing value on index 4
+
+> CODE:
+
+fruitTypes = ['Apple', 'Banana', 'Grapes', 'Orange', 'Watermelon']
+fruitTypes[4] = 'Blueberry'
+print(fruitTypes)
+
+> OUTPUT:
+
+['Apple', 'Banana', 'Grapes', 'Orange', 'Blueberry']
+
+
+
+4. Create an array of animals with 5 values and use the remove function to remove one item on the list
+
+> CODE:
+
+animals = ['Cat', 'Dog', 'Horse', 'Donkey', 'Monkey']
+animals.remove('Donkey')
+print(animals)
+
+> OUTPUT:
+
+['Cat', 'Dog', 'Horse', 'Monkey']

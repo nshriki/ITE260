@@ -1,0 +1,92 @@
+Coding Time: Open your code editors like Notepad++, Sublime, or any available IDE.
+
+1. Using the if-else statement, create a program that will ask for a number, your program must tell if the number entered by the user is “POSITIVE”, or “NEGATIVE”.
+
+> CODE:
+
+num = int(input("Enter a number: "))
+if num >= 0:
+    print("POSITIVE")
+else:
+    print("NEGATIVE")
+
+
+> OUTPUT:
+
+(if positive):
+
+Enter a number: 5
+POSITIVE
+
+(if negative):
+
+Enter a number: -11
+NEGATIVE
+
+
+
+2. Using the if-else statement create a program that will ask the 5 grades for 5 different subjects then get the average grade base on that grade print if the grade they have is greater than 85 print with highest honor, 80 higher with honor, 75 above pass, and 75 below fail.
+example :
+output : Jimuel average: 74 fail
+
+> CODE:
+
+student = input("Enter Student name: ")
+grade1 = int(input("Enter Subject 1 grade: "))
+grade2 = int(input("Enter Subject 2 grade: "))
+grade3 = int(input("Enter Subject 3 grade: "))
+grade4 = int(input("Enter Subject 4 grade: "))
+grade5 = int(input("Enter Subject 5 grade: "))
+
+avg = (grade1 + grade2 + grade3 + grade4 + grade5) / 5
+
+if avg > 85:
+    print(student, "average: " + str(avg) + " " + "with highest honor")
+elif avg > 80:
+    print(student, "average: " + str(avg) + " " + "with honor")
+elif avg >= 75:
+    print(student, "average: " + str(avg) + " " + "pass")
+else:
+    print(student, "average: " + str(avg) + " " + "fail")
+
+
+> SAMPLE OUTPUT: 
+
+Enter Student name: Bren
+Enter Subject 1 grade: 98
+Enter Subject 2 grade: 99
+Enter Subject 3 grade: 97
+Enter Subject 4 grade: 96
+Enter Subject 5 grade: 95
+Bren average: 97.0 with highest honor
+
+
+
+3. Create a program that will ask the user for their username and password if the entered credentials was correct print login. Create a variable that holds a static value for username and password .
+
+> CODE:
+
+staticUsername = "enhypen"
+staticPassword = "enha123"
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+if username == staticUsername and password == staticPassword:
+    print("login")
+else:
+    print("invalid credentials")
+
+
+> OUTPUT:
+
+(if login):
+
+Enter username: enhypen
+Enter password: enha123
+login
+
+(if invalid):
+
+Enter username: bren
+Enter password: bren123
+invalid credentials

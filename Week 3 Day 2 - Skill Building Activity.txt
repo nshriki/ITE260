@@ -1,0 +1,55 @@
+A. Code Evaluation
+
+1.) 3
+2.) PYTHON
+3.) 5
+
+
+B. Coding Time
+
+1.)
+
+empFName = input("First name: ")
+empLName = input("Last name: ")
+salary = float(input("Salary: "))
+rating = int(input("Rating: "))
+bonus = 0
+
+print("\n===================\n")
+
+if rating == 1:
+    bonus = salary * 0.10
+elif rating == 2:
+    bonus = salary * 0.06
+elif rating == 3:
+    bonus = salary * 0.03
+elif rating == 4:
+    pass
+else:
+    print("The rating does not follow the 1-4 rating system.")
+
+print("Name: " + empFName + " " + empLName)
+print("Salary: " + str(salary))
+print("Rating: " + str(rating))
+print("Bonus: " + str(bonus))
+
+
+B. Activity 3: Check for Understanding
+
+1.)
+if x == y and z == a:
+    print("Python")
+
+2.)
+if x == y or z == a:
+    print("Python")
+
+3.)
+if 1 == 1: print("One is equal to one!")
+
+4.)
+print("Yes") if 1 == 1 else print("No")
+
+5.)
+if 1 == 1:
+    print("One is equal to one!")
